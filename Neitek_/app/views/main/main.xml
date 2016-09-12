@@ -1,0 +1,35 @@
+<page  
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  xmlns:dd="nativescript-drop-down" 
+  id="id-page"
+  xmlns:statusbar="nativescript-statusbar"
+  loaded="pageLoaded">
+	<statusbar:StatusBar ios:barStyle="light" />
+	<ActionBar  title=" " style="margin-top:26px;height:15px">
+	</ActionBar>
+	<drawer:rad-side-drawer id="drawer">
+		<drawer:rad-side-drawer.mainContent>
+			<ScrollView orientation="vertical">
+				<stack-layout loaded="contentLoaded" orientation="vertical" style="margin-top:25px" >
+					<label class="labels" text="Año:"  textWrap="true" />
+					<dd:DropDown class="combos imagecombo " id="idDropDown" items="{{ items0 }}"   propertyChange="onchange"    row="0" colSpan="2" />
+					<label id="nombre1" visibility="collapsed" class="labels" text="Tipo de Informe:" textWrap="true" />
+					<dd:DropDown visibility="collapsed"  class="combos imagecombo " items="{{ items1 }}" id="idDropDown1" propertyChange="onchange1"  row="1" colSpan="2" />
+					<label id="nombre2" visibility="collapsed"  class="labels" text="Informes Elaborados:" textWrap="true" />
+					<dd:DropDown visibility="collapsed"  class="combos imagecombo" items="{{ items2 }}" id="idDropDown2" propertyChange="onchange2"   row="2" colSpan="2" />
+					<label id="nombre3" visibility="collapsed"  class="labels" text="opciones de consulta:" textWrap="true" />
+					<dd:DropDown visibility="collapsed"  class="combos imagecombo" items="{{ items3 }}" id="idDropDown3"   propertyChange="onchange3"   row="3" colSpan="2" />
+					<label id="nombre4" visibility="collapsed"  class="labels" text="Contenido:" textWrap="true" />
+					<dd:DropDown visibility="collapsed"  class="combos imagecombo" items="{{ items4 }}" id="idDropDown4"   propertyChange="onchange4"  row="4" colSpan="2" />
+					<!--<button text="Login" tap="logian_" id="submit-button1" />
+					<Button text="Show dialog" tap="buttonTap" />-->
+				</stack-layout>
+			</ScrollView>
+		</drawer:rad-side-drawer.mainContent>
+		<drawer:rad-side-drawer.drawerContent>
+			<widgets:drawer-content />
+		</drawer:rad-side-drawer.drawerContent>
+	</drawer:rad-side-drawer>
+</page>

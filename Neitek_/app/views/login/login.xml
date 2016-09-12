@@ -1,0 +1,45 @@
+<page loaded="loaded" xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true" backgroundSpanUnderStatusBar="true">
+	
+		<grid-layout>
+			<!-- The parallax background. Give the background a negative margin-top to overlay  -->
+			<!-- the iOS status bar. -->
+		
+			<grid-layout  id="background" ios:marginTop="-20" scaleX="1.6" scaleY="1.6"></grid-layout>
+
+			<!-- The initial content that displays when the page loads -->
+			<stack-layout id="initial-container">
+
+			</stack-layout>
+
+			<!-- The main container that contains the actual login & sign up form -->
+
+			<stack-layout id="container">
+				<label text="" id="main-label" color="{{ isLogin ? 'black' : 'white' }}" />
+				<grid-layout rows="auto, auto" id="form-controls" translateY="50">
+					<text-field
+							id="email" text="" hint="Email" keyboardType="email"
+							returnKeyType="next" returnPress="focusPassword"
+							autocorrect="false" autocapitalizationType="none"
+							row="0"
+							color="{{ isLogin ? 'black' : 'white' }}" />
+					<text-field id="password" secure="true" text="" hint="Password"
+						returnKeyType="done" returnPress="signIn"
+						row="1"
+						color="{{isLogin ? 'black' : 'white' }}" />
+					<activity-indicator busy="{{ authenticating }}" rowSpan="2" />
+				</grid-layout>
+				<button text="Login" tap="login_" id="submit-button1" />
+
+				<label id="forgot-password-label" android:text="¿Olvidaste tu contraseña?" ios:text="¿Olvidaste tu contllraseña?" tap="forgotPassword" opacity="{{ isLogin ? 1 : 0 }}" />
+				<stack-layout id="sign-up-stack" tap="toggleDisplay" translateY="50">
+					<label id="sign-up-label"  tap="cuenta" text="Registrate" />
+				</stack-layout>
+			</stack-layout>
+
+			<absolute-layout horizontalAlignment="center" ios:height="0" id="container-logo">
+				<image android:top="50" ios:top="-248" src="{{ isLogin ? 'res://logo_saai' : 'res://logo_saai' }}" stretch="none"  />
+			</absolute-layout>
+	
+		</grid-layout>
+	
+</page>

@@ -1,0 +1,15 @@
+<grid-layout class="drawer-content" orientation="vertical">
+	<ScrollView orientation="vertical">
+		 <stack-layout orientation="vertical" >
+			<absolute-layout horizontalAlignment="center" ios:height="0" id="container-logo">
+				<image android:top="30" android:buttom="10" ios:top="-248" src="{{ isLogin ? 'res://logo_saai' : 'res://logo_saai' }}" style="height:90px"  />
+			</absolute-layout>
+			<label style="color:#acac75;margin: 0 0 0 0;"  text="______________________________________"  />
+			<label text="Información por Tomo" tap="navigate" />
+			<label text="Información por tipo" tap="navigate"  />
+			<label text="Información de Estudios " tap="navigate"  />
+			<label text="información por auditorías" tap="navigate"  />
+			<label text="configuración" tap="configuracion"  />
+		 </stack-layout>
+	</ScrollView >
+</grid-layout>

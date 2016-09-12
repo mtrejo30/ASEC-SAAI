@@ -1,0 +1,33 @@
+<page
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  id="id-page-limite"
+  xmlns:statusbar="nativescript-statusbar"
+  loaded="pageLoaded">
+	<statusbar:StatusBar ios:barStyle="light" />
+	<ActionBar  title=" " class="imgbar">
+		<NavigationButton android:top="-100" text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap_"/>
+	</ActionBar>
+
+	<drawer:rad-side-drawer id="drawer">
+		<drawer:rad-side-drawer.mainContent>
+
+			<!-- Home page contents-->
+			<ScrollView orientation="vertical">
+				<stack-layout loaded="contentLoaded" style="margin-top:35px">
+
+					<!--<Progress value="{{ someProperty }}" />-->
+					<label id="nombre"   class="labels" text="Limitar Tamaños de descargas" textWrap="true" />
+					<Slider class="barrita" value="{{ someProperty }}" />
+					<label id="lineas"  text="         0Mb                             50Mb                                       ..." textWrap="true" />
+
+				</stack-layout>
+			</ScrollView>
+		</drawer:rad-side-drawer.mainContent>
+		<drawer:rad-side-drawer.drawerContent>
+			<widgets:drawer-content />
+		</drawer:rad-side-drawer.drawerContent>
+	</drawer:rad-side-drawer>
+
+</page>

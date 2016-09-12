@@ -1,0 +1,36 @@
+<page
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  id="id-page-acceso"
+  xmlns:statusbar="nativescript-statusbar"
+  loaded="pageLoaded">
+  <statusbar:StatusBar ios:barStyle="light" />
+  <ActionBar  title="" class="imgbar">
+	<NavigationButton android:top="-100" text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+  </ActionBar>
+	<ScrollView orientation="vertical">
+		<stack-layout loaded="contentLoaded" orientation="vertical" style="margin-top:25px" >
+			<label class="labels" text="Correo Electronico:"  textWrap="true" />
+			<text-field
+						id="email" text="" returnPress="focusPassword"
+						autocorrect="false" row="0" class="cajitas"/>
+			<label class="labels" text="Nombres:" textWrap="true" />
+			<text-field
+						id="nombres" text="" returnPress="focusPassword"
+						autocorrect="false" row="0"  class="cajitas"/>
+			<label class="labels" text="Apellidos:" textWrap="true" />
+			<text-field
+						id="app" text="" returnPress="focusPassword"
+						autocorrect="false" row="0"  class="cajitas"/>
+			<label class="labels" text="Domicilio" textWrap="true" />
+			<text-field
+						id="domicilio" text="" returnPress="focusPassword"
+						autocorrect="false" row="0"  class="cajitas"/>
+			<button text="Registrar" tap="login_" id="submit-button1" textWrap="true"  />
+			<button text="Iniciar sesión con Facebook" tap="" id="init" textWrap="true"  />
+			<!--<button text="Login" tap="logian_" id="submit-button1" />
+					<Button text="Show dialog" tap="buttonTap" />-->
+		</stack-layout>
+	</ScrollView>
+</page>

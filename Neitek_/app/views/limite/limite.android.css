@@ -1,0 +1,38 @@
+
+#id-page-limite
+{
+     background-image: url("res://intefase_03__");
+     background-repeat:no-repeat;
+     background-position: right top;
+    
+}
+action-bar {
+  background-color:#0b132c;
+  color: white;
+}
+
+.drawer-content {
+  background-color: white;
+  color:#6b400c;
+  padding-top: 0;
+}
+.drawer-content label {
+  font-size: 16;
+  margin: 10 0 15 25;
+}
+.barrita
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+.labels{
+   
+    /*font-weight:bold;*/
+    
+    margin-left:20px;
+    font-size:15px;
+}
+.imgbar {
+    margin-top:26px;
+    height:40px
+}

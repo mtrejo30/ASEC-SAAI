@@ -1,0 +1,32 @@
+<page
+  xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:drawer="nativescript-telerik-ui/sidedrawer"
+  xmlns:widgets="shared/widgets"
+  id="id-page-pdf"
+   xmlns:pdf="nativescript-pdf-view"
+  xmlns:statusbar="nativescript-statusbar"
+  loaded="pageLoaded">
+
+	<statusbar:StatusBar ios:barStyle="light" />
+
+	<ActionBar  title=" " class="imgbar">
+		<NavigationButton android:top="-100" text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap_"/>
+	</ActionBar>
+
+	<drawer:rad-side-drawer id="drawer">
+		<drawer:rad-side-drawer.mainContent>
+			<ScrollView orientation="vertical">
+				<!-- Home page contents-->
+				<stack-layout orientation="vertical" loaded="contentLoaded"  style="margin-top:35px" >
+					<image android:top="50"  style="margin-left:55px;margin-buttom:10px" ios:top="-248" src="{{ isLogin ? 'res://documento' : 'res://documento' }}" stretch="none"  />
+					<image android:top="50" style="margin-left:55px" ios:top="-248" src="{{ isLogin ? 'res://documento' : 'res://documento' }}" stretch="none"  />
+
+				</stack-layout>
+			</ScrollView>
+		</drawer:rad-side-drawer.mainContent>
+		<drawer:rad-side-drawer.drawerContent>
+			<widgets:drawer-content />
+		</drawer:rad-side-drawer.drawerContent>
+	</drawer:rad-side-drawer>
+
+</page>

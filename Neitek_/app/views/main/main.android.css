@@ -1,0 +1,55 @@
+@import url("~/views/main/main-common.css");
+
+action-bar {
+  background-color:#0b132c;
+  color: white;
+}
+
+.drawer-content {
+  background-color: white;
+  color:#6b400c;
+  padding-top: 0;
+}
+.drawer-content label {
+  font-size: 16;
+  margin: 10 0 15 25;
+}
+
+#id-page
+{
+    background-image: url("res://intefase_03__");
+    background-repeat:no-repeat;
+    background-position:right top;
+}
+#action-bar-menu-image {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.combos
+{
+    background-color:rgba(98, 75, 41, 0.25);
+    border-radius: 5px;
+    margin-left:20px;
+    margin-right:20px;
+   
+    z-index: -4;
+}
+
+.imagecombo
+{
+     padding:4px,32px,4px,4px;
+     background-image: url("res://ic_down");
+     background-position:right  ;
+     background-repeat:no-repeat;
+     position: absolute;
+}
+.labels{
+   
+    /*font-weight:bold;*/
+    
+    margin-left:20px;
+    font-size:15px;
+}
+
+
+

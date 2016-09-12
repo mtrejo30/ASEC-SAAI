@@ -1,0 +1,83 @@
+/* Hide a bunch of things to setup the initial animations */
+#container, #container-logo {
+  margin-top:100px;
+  visibility: collapse;
+  opacity: 0;
+
+}
+#form-controls, #sign-up-stack {
+  opacity: 0;
+}
+
+#initial-container {
+  margin-top: 170;
+}
+#initial-logo {
+  horizontal-align: center;
+  margin-bottom: 10;
+}
+#initial-label {
+  color: black;
+  horizontal-align: center;
+  margin-bottom: 80;
+}
+
+#initial-button {
+  background-color: white;
+  color: black;
+  height: 45;
+  width: 275;
+  vertical-align: center;
+}
+
+#initial-button-label {
+  horizontal-align: center;
+  font-weight: bold;
+}
+
+#container {
+  margin: 20;
+  border-radius: 15px 30px 45px 60px;
+  background-color: white;
+}
+
+button, text-field {
+    
+  margin-left: 16;
+  margin-right: 16;
+}
+text-field {
+  padding: 10;
+  font-size: 13;
+}
+
+#main-label {
+  horizontal-align: center;
+  color: black;
+}
+#submit-button1 {
+  background-color: #acac75;
+  font-size: 15;
+  color: white;
+  margin-bottom: 10;
+
+}
+#forgot-password-label {
+  font-size: 13;
+  margin-left: 20;
+  margin-bottom: 45;
+  color: black;
+}
+#sign-up-stack {
+   
+  margin-top:30px;
+  background-color: black;
+  background-image: url("res://ic_setting");
+  background-repeat:no-repeat;
+  background-position: left center;
+}
+#sign-up-label {
+  color: white;
+  horizontal-align: center;
+  font-size: 15;
+}

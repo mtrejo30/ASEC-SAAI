@@ -1,0 +1,63 @@
+
+#id-page-acceso
+{
+     background-image: url("res://intefase_03__");
+     background-repeat:no-repeat;
+     background-position: right top;
+    
+}
+action-bar {
+  background-color:#0b132c;
+  color: white;
+}
+
+.drawer-content {
+  background-color: white;
+  color:#6b400c;
+  padding-top: 0;
+}
+.drawer-content label {
+  font-size: 16;
+  margin: 10 0 15 25;
+}
+.labels{
+   
+    /*font-weight:bold;*/
+    
+    margin-left:20px;
+    font-size:15px;
+}
+
+.cajitas{
+    background-color:rgba(98, 75, 41, 0.25);
+    border-radius: 5px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#submit-button1 {
+  background-color: #6b400c;
+  font-size: 15;
+  color: white;
+  background-image: url("res://ic_supervisor") ;
+  background-repeat:no-repeat;
+  background-position: left center;
+  margin:10px,20px,10px,20px;
+
+}
+
+#init
+{
+  background-color: #3d599b;
+  font-size: 15;
+  margin-left:20px;
+  margin-right:20px;
+  color: white;
+  background-image: url("res://intefase_05_");
+  background-repeat:no-repeat;
+  background-position: left center;
+}
+.imgbar {
+    margin-top:26px;
+    height:40px
+}
